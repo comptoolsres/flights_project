@@ -32,3 +32,8 @@ print(flights_per_month)
 # Hint: Use the groupby() function  
 delayed_flights_per_month = df[df['ArrDelay'] > 0].groupby(['Year', 'Month']).size()
 print(delayed_flights_per_month)
+
+average_delay_time = df[df['ArrDelay'] > 0].groupby(['Year', 'Month'])[['CarrierDelay', 'WeatherDelay',
+                         'NASDelay', 'SecurityDelay', 
+                         'LateAircraftDelay']].mean()
+print(average_delay_time)
