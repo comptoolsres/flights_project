@@ -3,11 +3,11 @@
 #SBATCH --job-name=flights
 #SBATCH --output=flights.out
 #SBATCH --error=flights.err
-#SBATCH --time=00:10:00
+#SBATCH --time=00:60:00
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
-#SBATCH --mem=1G
+#SBATCH --mem=300G
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=magitz@ufl.edu
 
@@ -18,7 +18,7 @@ pwd; hostname; date
 module load python
 
 # Run the python script
-python flights.py --input '/blue/bsc4452/share/Class_Files/data/flights.1K.csv'
+python flights.py '/blue/bsc4452/share/Class_Files/data/combined_flight_data_2004-2023_selected_cols.csv'
 
 
 # python flights.py --input '/blue/bsc4452/share/Class_Files/data/combined_flight_data_2019-2023_selected_cols.csv'

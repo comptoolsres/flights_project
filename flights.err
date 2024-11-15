@@ -1,0 +1,2 @@
+/blue/bsc4452/magitz/flights_project/flights.py:24: DtypeWarning: Columns (24) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(args.filename)
