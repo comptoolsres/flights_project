@@ -1,0 +1,33 @@
+From: Slurm User <slurm@rc.ufl.edu>
+
+Sent: Wednesday, November 13, 2024 10:30 AM
+
+To: Gitzendanner, Matt <magitz@ufl.edu>
+
+Subject: HiPerGator: Job ID=49714498, Name=flights, Action=Ended
+
+ 
+
+Job ID                  : 49714498
+
+Cluster                 : hipergator
+
+User                    : magitz
+
+Group                   : ufhpc
+
+State                   : COMPLETED (exit code 0)
+
+Cores                   : 1
+
+CPU Time Used           : 00:08:01
+
+Wall Time Used          : 00:08:07
+
+CPU Efficiency          : 98.77%
+
+Memory Requested        : 300.00 GB (300.00 GB/node)
+
+Memory Used             : 127.05 GB (127.05 GB/core estimated maximum)
+
+Memory Efficiency       : 42.35%
